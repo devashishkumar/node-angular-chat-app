@@ -1,4 +1,4 @@
-### there are two application one is node js based and second one is angular-app both are separate application. Please follow following steps to use:
+### There are two applications in this repository one based on node js and second one is angular-app both are separate application. Please follow following steps to use:
 
 1. npm install in parent directory and angular-app
 
