@@ -1,0 +1,12 @@
+
+<form *ngIf="!isLoggedIn">
+  <input type="text" [(ngModel)]="user" name="user" placeholder="Enter Username" />
+  <input type="button" (click)="signIn()" value="Sign In">
+</form>
+<div *ngIf="isLoggedIn">
+Welcome {{user}}
+<span (click)="signOut()" style="display: block;">Logout</span>
+<span (click)="testSocket()" style="display: block;">Test Socket on login client</span>
+<span (click)="broadcast()" style="display: block;">Broadcast Message</span>
+</div>
+<router-outlet></router-outlet>

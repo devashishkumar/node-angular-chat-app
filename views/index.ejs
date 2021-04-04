@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Node JS Socket</title>
+        <script src="http://172.24.224.1:9898/socket.io/socket.io.js"></script>
+
+        <script>
+            function loadSocket() {
+                var socket = io.connect("http://172.24.224.1:9898/");
+                socket.on('testmessage', function (msg) {
+                    console.log(msg);
+                });
+            }
+        </script>
+    </head>
+    <body onload="loadSocket()">test</body>
+</html>
